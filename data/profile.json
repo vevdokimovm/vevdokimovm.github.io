@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "updated": "2026-08-16",
+    "version": "0.1.0",
+    "note": "Единственный файл с содержанием. Правки текста делаются здесь, кода не касаются."
+  },
+
+  "person": {
+    "name": { "ru": "Василий Евдокимов", "en": "Vasilii Evdokimov" },
+    "handle": "vevdokimovm",
+    "location": { "ru": "Москва · открыт к релокации", "en": "Moscow · open to relocation" },
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/vevdokimovm" },
+      { "label": "Telegram", "href": "https://t.me/vmevdokimov" },
+      { "label": "Email", "href": "mailto:vevdokimovm@gmail.com" }
+    ]
+  },
+
+  "passport": {
+    "ru": [
+      ["Специальность", "Информатика и вычислительная техника, 09.03.01"],
+      ["Выпуск", "НИТУ МИСИС, 2026 · ВКР защищён 23.05.2026"],
+      ["Языки", "Русский — родной · Английский — B2, готовлюсь к IELTS"],
+      ["Формат", "Полная занятость · офис, гибрид, удалённо"]
+    ],
+    "en": [
+      ["Field", "Computer Science and Engineering, 09.03.01"],
+      ["Degree", "NUST MISIS, 2026 · thesis defended 23 May 2026"],
+      ["Languages", "Russian — native · English — B2, IELTS in preparation"],
+      ["Availability", "Full time · on-site, hybrid, remote"]
+    ]
+  },
+
+  "roles": [
+    {
+      "id": "backend",
+      "code": "01",
+      "label": { "ru": "Backend-разработчик", "en": "Backend Engineer" },
+      "short": { "ru": "Python", "en": "Python" },
+      "headline": {
+        "ru": "Backend на Python: проектирую сервис от модели данных до релиза",
+        "en": "Python backend: from the data model to the release"
+      },
+      "summary": {
+        "ru": "Строю сервисы на FastAPI со слоистой архитектурой, SQLAlchemy 2.0 и Pydantic v2. Дипломный проект — не учебный пример, а работающая система поддержки принятия решений: пять алгоритмических модулей, около двадцати эндпоинтов, тесты четырёх уровней и CI с жёсткими гейтами. Умею довести код до состояния, когда его можно выпускать, а не только запускать у себя.",
+        "en": "I build FastAPI services with a layered architecture, SQLAlchemy 2.0 and Pydantic v2. My thesis project is not a toy: a working decision-support system with five algorithmic modules, around twenty endpoints, four tiers of tests and CI with hard gates. I can take code to a state where it ships, not just runs locally."
+      },
+      "metrics": [
+        { "value": "≈20", "label": { "ru": "REST-эндпоинтов в СППР", "en": "REST endpoints in the DSS" } },
+        { "value": "≥90%", "label": { "ru": "покрытие как гейт CI", "en": "coverage as a CI gate" } },
+        { "value": "10 000", "label": { "ru": "итераций Монте-Карло", "en": "Monte Carlo iterations" } },
+        { "value": "8.19", "label": { "ru": "версия продукта в релизах", "en": "product release version" } }
+      ],
+      "stack": [
+        "Python 3.12", "FastAPI", "SQLAlchemy 2.0", "Pydantic v2", "Alembic",
+        "PostgreSQL", "SQLite", "Redis", "async/await", "pytest", "Docker",
+        "Flask", "aiogram", "Jinja2", "REST", "ООП", "PEP 8"
+      ],
+      "projects": ["finpilot", "tgbot", "todo", "bron"]
+    },
+
+    {
+      "id": "analytics",
+      "code": "02",
+      "label": { "ru": "Продуктовый аналитик", "en": "Product / Data Analyst" },
+      "short": { "ru": "Аналитика", "en": "Analytics" },
+      "headline": {
+        "ru": "Аналитика с инженерной стороны: сам достаю данные, сам считаю, сам объясняю",
+        "en": "Analytics from the engineering side: I pull the data, run the numbers and explain them"
+      },
+      "summary": {
+        "ru": "Три года прикладной математики в МИФИ и призёрство олимпиады «Физтех» дают базу, которой обычно не хватает: статистика и вероятность не заучены, а поняты. В EdTech-компании автоматизировал регулярную отчётность и интеграции между сервисами по подходу ETL. Дипломный проект целиком построен на принятии решений по метрикам: многокритериальное ранжирование, финансовые показатели DTI и Current Ratio, оценка устойчивости решения симуляцией.",
+        "en": "Three years of applied mathematics at MEPhI and a prize at the Phystech olympiad give me the base that is usually missing: statistics and probability understood rather than memorised. At an EdTech company I automated recurring reporting and service-to-service integrations in an ETL fashion. My thesis is built entirely around metric-driven decisions: multi-criteria ranking, DTI and Current Ratio, and robustness testing by simulation."
+      },
+      "metrics": [
+        { "value": "≈3 000", "label": { "ru": "записей в день в отчётности", "en": "records per day in reporting" } },
+        { "value": "−8 ч", "label": { "ru": "ручной работы в неделю", "en": "of manual work per week" } },
+        { "value": "≈6", "label": { "ru": "процессов автоматизировано", "en": "processes automated" } },
+        { "value": "5", "label": { "ru": "критериев в модели ранжирования", "en": "criteria in the ranking model" } }
+      ],
+      "stack": [
+        "SQL", "PostgreSQL", "pandas", "numpy", "Excel", "Jupyter",
+        "matplotlib", "seaborn", "ETL", "математическая статистика",
+        "теория вероятностей", "линейная алгебра", "A/B-мышление", "Python"
+      ],
+      "projects": ["finpilot", "vkgraph", "parser", "health"]
+    },
+
+    {
+      "id": "devops",
+      "code": "03",
+      "label": { "ru": "DevOps / Инфраструктура", "en": "DevOps / Platform" },
+      "short": { "ru": "DevOps", "en": "DevOps" },
+      "headline": {
+        "ru": "Автоматизация и релизная дисциплина: чтобы выкатка была скучной",
+        "en": "Automation and release discipline: deployment should be boring"
+      },
+      "summary": {
+        "ru": "Веду личную систему из 49 репозиториев с единым деплойером — идемпотентный скрипт на 1700 строк с повторами по backoff, проверками перед публикацией и отказом там, где решение должен принимать человек. Это не хобби, а тренировка ровно тех навыков, за которые платят: у продукта трёхуровневый CI с гейтами, Docker-инфраструктура, миграции Alembic и нагрузочные тесты. Главный урок системы — скрипт, который завершился с нулём, не сделав работу, хуже упавшего.",
+        "en": "I run a personal system of 49 repositories behind a single deployer: an idempotent 1700-line script with backoff retries, pre-publication checks and a hard stop wherever a human must decide. It is not a hobby but practice in exactly the skills that get paid for: the product has three-tier CI with gates, Docker infrastructure, Alembic migrations and load tests. The main lesson of the system: a script that exits zero without doing the work is worse than one that fails."
+      },
+      "metrics": [
+        { "value": "49", "label": { "ru": "репозиториев под одним деплойером", "en": "repositories, one deployer" } },
+        { "value": "3", "label": { "ru": "уровня CI с гейтами", "en": "CI tiers with gates" } },
+        { "value": "0", "label": { "ru": "ошибок flake8 как условие сборки", "en": "flake8 errors as a build condition" } },
+        { "value": "100%", "label": { "ru": "релизов с ассетом и описанием", "en": "releases with asset and notes" } }
+      ],
+      "stack": [
+        "Docker", "docker compose", "GitHub Actions", "nginx", "Bash", "zsh",
+        "Linux", "Git", "gh CLI", "Alembic", "pytest", "flake8", "coverage",
+        "SemVer", "идемпотентность", "load testing"
+      ],
+      "projects": ["finpilot", "toolchain", "health"]
+    },
+
+    {
+      "id": "cpp",
+      "code": "04",
+      "label": { "ru": "C++ и алгоритмы", "en": "C++ and Algorithms" },
+      "short": { "ru": "C++", "en": "C++" },
+      "headline": {
+        "ru": "Низкий уровень и структуры данных: писал их руками, а не подключал",
+        "en": "Low level and data structures: written by hand, not imported"
+      },
+      "summary": {
+        "ru": "Начинал с C++ в 2017 году и держал его три года в МИФИ и МИСИС. Реализовывал бинарное дерево, двоичную кучу, собственный класс строки и полиморфный динамический массив на чистом C — то есть понимаю, что происходит под контейнерами STL, а не только как их вызвать. Курсовая работа — алгоритм Брона — Кербоша поиска клик в графе, выложен отдельным публичным репозиторием.",
+        "en": "I started with C++ in 2017 and kept it for three years at MEPhI and MISIS. I implemented a binary tree, a binary heap, a custom string class and a polymorphic dynamic array in plain C — meaning I understand what happens beneath the STL containers, not just how to call them. My coursework is the Bron–Kerbosch maximal clique algorithm, published as its own public repository."
+      },
+      "metrics": [
+        { "value": "C++17", "label": { "ru": "современный стандарт", "en": "modern standard" } },
+        { "value": "3", "label": { "ru": "года академической практики", "en": "years of academic practice" } },
+        { "value": "1", "label": { "ru": "научная статья на английском", "en": "research paper in English" } },
+        { "value": "2017", "label": { "ru": "первая строка кода", "en": "first line of code" } }
+      ],
+      "stack": [
+        "C++11 / 14 / 17", "C", "STL", "шаблоны", "ООП", "структуры данных",
+        "алгоритмы на графах", "теория сложности", "CMake", "отладка"
+      ],
+      "projects": ["bron", "finpilot", "tgbot"]
+    }
+  ],
+
+  "projects": {
+    "finpilot": {
+      "name": "FINPILOT",
+      "href": "https://github.com/vevdokimovm/finpilot",
+      "tag": { "ru": "флагман · дипломная работа", "en": "flagship · thesis" },
+      "text": {
+        "ru": "Алгоритмическая СППР по личным финансам: распределяет свободный денежный поток между долгами, резервом и целями. Пять модулей — прогноз временных рядов (SES), генерация 66 альтернатив, фильтрация по ограничениям, ранжирование методом SAW по пяти критериям, оценка устойчивости Монте-Карло на 10 000 итераций. FastAPI, SQLAlchemy 2.0, Alembic, PostgreSQL, Docker, CI с гейтами. Заявка на регистрацию в Роспатенте подана.",
+        "en": "An algorithmic decision-support system for personal finance: it allocates free cash flow across debt, reserve and goals. Five modules — time-series forecasting (SES), generation of 66 alternatives, constraint filtering, SAW ranking on five criteria, and Monte Carlo robustness testing over 10 000 iterations. FastAPI, SQLAlchemy 2.0, Alembic, PostgreSQL, Docker, gated CI. Registration filed with Rospatent."
+      }
+    },
+    "bron": {
+      "name": "bron-kerbosch",
+      "href": "https://github.com/vevdokimovm/bron-kerbosch",
+      "tag": { "ru": "курсовая · алгоритмы", "en": "coursework · algorithms" },
+      "text": {
+        "ru": "Реализация алгоритма Брона — Кербоша: поиск всех максимальных клик в неориентированном графе, с разбором версии с выбором опорной вершины и оценкой сложности.",
+        "en": "An implementation of the Bron–Kerbosch algorithm: enumerating all maximal cliques in an undirected graph, including the pivoting variant and a complexity analysis."
+      }
+    },
+    "vkgraph": {
+      "name": "vk-graph",
+      "href": "https://github.com/vevdokimovm/vk-graph",
+      "tag": { "ru": "анализ данных", "en": "data analysis" },
+      "text": {
+        "ru": "Построение и разбор графа социальных связей: сбор данных через API, метрики центральности, поиск сообществ и визуализация.",
+        "en": "Building and analysing a social graph: API data collection, centrality metrics, community detection and visualisation."
+      }
+    },
+    "health": {
+      "name": "health-report-generator",
+      "href": "https://github.com/vevdokimovm/health-report-generator",
+      "tag": { "ru": "обработка данных", "en": "data processing" },
+      "text": {
+        "ru": "Сборка разрозненных лабораторных выгрузок в единый отчёт: нормализация единиц, сопоставление референсов, динамика показателей во времени.",
+        "en": "Merging scattered lab exports into a single report: unit normalisation, reference-range matching and tracking values over time."
+      }
+    },
+    "tgbot": {
+      "name": "TG-bot-for-finances",
+      "href": "https://github.com/vevdokimovm/TG-bot-for-finances",
+      "tag": { "ru": "асинхронный сервис", "en": "async service" },
+      "text": {
+        "ru": "Телеграм-бот учёта финансов на aiogram: около пятнадцати хендлеров, три модели БД, асинхронная работа с базой, слоистая архитектура.",
+        "en": "A finance-tracking Telegram bot on aiogram: about fifteen handlers, three database models, async database access and a layered architecture."
+      }
+    },
+    "todo": {
+      "name": "Web-To-Do-List",
+      "href": "https://github.com/vevdokimovm/Web-To-Do-List",
+      "tag": { "ru": "веб-приложение", "en": "web application" },
+      "text": {
+        "ru": "Многопользовательский список задач на Flask и SQLAlchemy: регистрация, авторизация, около десяти REST-эндпоинтов, персональные CRUD-задачи.",
+        "en": "A multi-user task list on Flask and SQLAlchemy: registration, authentication, about ten REST endpoints and per-user CRUD."
+      }
+    },
+    "parser": {
+      "name": "Parser-hhru-vacancies",
+      "href": "https://github.com/vevdokimovm/Parser-hhru-vacancies",
+      "tag": { "ru": "сбор данных", "en": "data collection" },
+      "text": {
+        "ru": "Парсер вакансий: около пятисот записей за прогон, фильтрация по ключевым словам, структурированный экспорт в Excel через openpyxl.",
+        "en": "A vacancy parser: about five hundred records per run, keyword filtering and structured export to Excel via openpyxl."
+      }
+    },
+    "toolchain": {
+      "name": { "ru": "Система репозиториев", "en": "Repository system" },
+      "href": "https://github.com/vevdokimovm",
+      "tag": { "ru": "внутренний инструментарий", "en": "internal tooling" },
+      "text": {
+        "ru": "49 репозиториев под единым деплойером: сборка архива, коммит, тег, релиз с ассетом, сверка карты и раздача общей инфраструктуры. Идемпотентность, повторы с backoff, проверки перед публикацией, явный отказ вместо тихого успеха.",
+        "en": "49 repositories behind a single deployer: archive assembly, commit, tag, release with asset, registry reconciliation and shared-infrastructure distribution. Idempotency, backoff retries, pre-publication checks, and an explicit refusal instead of a silent success."
+      }
+    }
+  },
+
+  "experience": [
+    {
+      "org": "Freelance",
+      "role": { "ru": "Python-разработчик", "en": "Python Developer" },
+      "period": { "ru": "янв 2025 — н. в.", "en": "Jan 2025 — present" },
+      "text": {
+        "ru": "Backend на Python: проектирование архитектуры, REST API, работа с базами данных, релизная дисциплина. Ключевой результат периода — СППР по личным финансам, доведённая от прототипа до версионируемого продукта с тестами и CI.",
+        "en": "Python backend: architecture design, REST APIs, databases, release discipline. The key outcome of the period is the personal-finance DSS, taken from prototype to a versioned product with tests and CI."
+      }
+    },
+    {
+      "org": "BeeSchool",
+      "role": { "ru": "Программист", "en": "Software Developer" },
+      "period": { "ru": "июл 2024 — дек 2024", "en": "Jul 2024 — Dec 2024" },
+      "text": {
+        "ru": "Автоматизировал около шести регулярных операционных задач Python-скриптами: выгрузка и обработка данных порядка трёх тысяч записей в день, интеграции между внутренними сервисами, еженедельная отчётность. Экономия команде — около восьми часов в неделю. Провёл онбординг трёх стажёров: вводные материалы, код-ревью, настройка окружения и Git-флоу.",
+        "en": "Automated about six recurring operational tasks with Python scripts: data extraction and processing at around three thousand records a day, integrations between internal services, and weekly reporting — saving the team roughly eight hours a week. Onboarded three interns: introductory materials, code review, environment and Git flow setup."
+      }
+    }
+  ],
+
+  "education": [
+    {
+      "org": { "ru": "НИТУ МИСИС, Институт компьютерных наук", "en": "NUST MISIS, Institute of Computer Science" },
+      "line": { "ru": "Информатика и вычислительная техника (09.03.01) · выпуск 2026", "en": "Computer Science and Engineering (09.03.01) · class of 2026" },
+      "note": { "ru": "ВКР защищён 23.05.2026. Научный руководитель — к.т.н. Бондаренко И. С., кафедра АСУ.", "en": "Thesis defended 23 May 2026. Supervisor: Dr. I. S. Bondarenko, Department of Automated Control Systems." }
+    },
+    {
+      "org": { "ru": "НИЯУ МИФИ, Институт интеллектуальных кибернетических систем", "en": "NRNU MEPhI, Institute of Cyber Intelligence Systems" },
+      "line": { "ru": "Прикладная математика и информатика · 2019—2022", "en": "Applied Mathematics and Computer Science · 2019—2022" },
+      "note": { "ru": "Призёр олимпиады «Физтех» по математике. Проектная практика по машинному обучению, по результатам написана научная статья на английском языке.", "en": "Prize winner of the Phystech mathematics olympiad. Machine-learning project practice, resulting in a research paper written in English." }
+    }
+  ],
+
+  "courses": [
+    { "year": "2025", "name": "Программирование на Python", "org": "Stepik" },
+    { "year": "2020", "name": "Neural Networks and Deep Learning", "org": "Coursera · Andrew Ng, deeplearning.ai" },
+    { "year": "2018", "name": "Программирование на языке C++", "org": "Stepik · Computer Science Center" },
+    { "year": "2018", "name": "Основы Git", "org": "Stepik" },
+    { "year": "2017", "name": "Введение в программирование (C++)", "org": "Академия Яндекса" }
+  ],
+
+  "ui": {
+    "ru": {
+      "roleSwitch": "Роль",
+      "passport": "Паспорт",
+      "summary": "О специалисте",
+      "metrics": "Показатели",
+      "stack": "Стек",
+      "projects": "Проекты",
+      "experience": "Опыт",
+      "education": "Образование",
+      "courses": "Курсы",
+      "print": "Скачать PDF",
+      "printHint": "Печать этой страницы даёт готовое резюме под выбранную роль",
+      "footer": "Страница собирается из одного файла данных. Исходники открыты."
+    },
+    "en": {
+      "roleSwitch": "Role",
+      "passport": "Datasheet",
+      "summary": "Profile",
+      "metrics": "Figures",
+      "stack": "Stack",
+      "projects": "Projects",
+      "experience": "Experience",
+      "education": "Education",
+      "courses": "Courses",
+      "print": "Download PDF",
+      "printHint": "Printing this page produces a CV tailored to the selected role",
+      "footer": "This page is generated from a single data file. Sources are open."
+    }
+  }
+}
