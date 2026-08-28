@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated": "2026-08-16",
-    "version": "0.1.0",
+    "updated": "2026-08-28",
+    "version": "0.2.0",
     "note": "Единственный файл с содержанием. Правки текста делаются здесь, кода не касаются."
   },
 
@@ -56,7 +56,7 @@
         "PostgreSQL", "SQLite", "Redis", "async/await", "pytest", "Docker",
         "Flask", "aiogram", "Jinja2", "REST", "ООП", "PEP 8"
       ],
-      "projects": ["finpilot", "tgbot", "todo", "bron"]
+      "projects": ["finpilot"]
     },
 
     {
@@ -83,7 +83,7 @@
         "matplotlib", "seaborn", "ETL", "математическая статистика",
         "теория вероятностей", "линейная алгебра", "A/B-мышление", "Python"
       ],
-      "projects": ["finpilot", "vkgraph", "parser", "health"]
+      "projects": ["finpilot", "vkgraph"]
     },
 
     {
@@ -110,7 +110,7 @@
         "Linux", "Git", "gh CLI", "Alembic", "pytest", "flake8", "coverage",
         "SemVer", "идемпотентность", "load testing"
       ],
-      "projects": ["finpilot", "toolchain", "health"]
+      "projects": ["finpilot", "toolchain"]
     },
 
     {
@@ -136,7 +136,160 @@
         "C++11 / 14 / 17", "C", "STL", "шаблоны", "ООП", "структуры данных",
         "алгоритмы на графах", "теория сложности", "CMake", "отладка"
       ],
-      "projects": ["bron", "finpilot", "tgbot"]
+      "projects": ["finpilot"]
+    },
+
+    {
+      "id": "frontend",
+      "code": "05",
+      "label": { "ru": "Frontend-разработчик", "en": "Frontend Engineer" },
+      "short": { "ru": "Frontend", "en": "Frontend" },
+      "headline": {
+        "ru": "React и TypeScript без сборочной боли: от чистых данных до рабочего интерфейса",
+        "en": "React and TypeScript without the build-pain: from raw data to a working UI"
+      },
+      "summary": {
+        "ru": "Собираю клиентские интерфейсы на React 19 + Vite + TypeScript поверх реальных данных — без бэкенда там, где он не нужен: интерактивное семейное древо на @xyflow/react из 148 персон и 196 связей, дашборд медицинских показателей на Recharts. Отдельно — интерактивный обучающий сайт по алгоритмам на чистом JavaScript без единой сборочной зависимости: собственный визуализатор шагов алгоритма и мини-транслятор кода в браузере. Меньше опыта, чем на бэкенде — честно это признаю, — но интерфейсы, которые я делаю, реально работают с реальными данными, не с моками.",
+        "en": "I build client-side interfaces with React 19 + Vite + TypeScript over real data — no backend where one isn't needed: an interactive family-tree view on @xyflow/react rendering 148 people and 196 connections, a lab-results dashboard on Recharts. Separately, an interactive algorithms-teaching site in plain JavaScript with zero build dependencies — a hand-built algorithm-step visualiser and an in-browser code runner. Less mileage than on the backend, and I say so plainly — but the interfaces I ship work against real data, not mocks."
+      },
+      "metrics": [
+        { "value": "148", "label": { "ru": "персон в интерактивном древе", "en": "people in the interactive tree" } },
+        { "value": "196", "label": { "ru": "связей на графе", "en": "edges in the graph" } },
+        { "value": "0", "label": { "ru": "сборочных зависимостей на алгоритм-сайте", "en": "build dependencies on the algorithms site" } },
+        { "value": "3", "label": { "ru": "рабочих React-приложения", "en": "shipped React applications" } }
+      ],
+      "stack": [
+        "React 19", "TypeScript", "Vite", "@xyflow/react", "Recharts",
+        "vanilla JS", "CSS", "DOM API", "node:test", "happy-dom"
+      ],
+      "projects": ["algosite"]
+    },
+
+    {
+      "id": "product",
+      "code": "06",
+      "label": { "ru": "Продакт-менеджер", "en": "Product Manager" },
+      "short": { "ru": "Продукт", "en": "Product" },
+      "headline": {
+        "ru": "От гипотезы до релиза в одиночку: сам провёл продукт весь путь",
+        "en": "From hypothesis to release, solo: I ran the whole product cycle myself"
+      },
+      "summary": {
+        "ru": "FINPILOT — не учебный кейс с придуманными цифрами, а продукт, проведённый через полный цикл одним человеком: собственное исследование (62 вопроса, 385 респондентов, очищенная выборка 375), сравнение с конкурентом на рынке (YNAB), формулировка требований, приоритизация модулей, четыре эпохи релизов (v1→v4) с читаемой историей решений, заявка на регистрацию в Роспатенте. Честная оговорка: это не продакт-менеджмент в команде с продажами и поддержкой — это продакт-мышление, проверенное в одиночку от идеи до работающего релиза.",
+        "en": "FINPILOT is not a classroom case with invented numbers — it is a product taken through the full cycle by one person: original research (a 62-question survey, 385 respondents, cleaned sample of 375), a competitor comparison (YNAB), requirements, module prioritisation, four release epochs (v1→v4) with a readable decision history, and a patent filing with Rospatent. Honest caveat: this is not product management inside a team with sales and support — it is product thinking, tested solo from idea to a working release."
+      },
+      "metrics": [
+        { "value": "385", "label": { "ru": "респондентов в собственном исследовании", "en": "respondents in the original survey" } },
+        { "value": "4", "label": { "ru": "эпохи релизов, v1→v4", "en": "release epochs, v1→v4" } },
+        { "value": "62", "label": { "ru": "вопроса в анкете", "en": "questions in the survey" } },
+        { "value": "1", "label": { "ru": "заявка в Роспатент", "en": "patent filing" } }
+      ],
+      "stack": [
+        "продуктовые исследования", "анкетирование", "приоритизация",
+        "конкурентный анализ", "роадмап", "решения через ADR", "метрики успеха"
+      ],
+      "projects": ["finpilot"]
+    },
+
+    {
+      "id": "manager",
+      "code": "07",
+      "label": { "ru": "Тимлид / менеджер разработки", "en": "Tech Lead / Engineering Manager" },
+      "short": { "ru": "Менеджмент", "en": "Management" },
+      "headline": {
+        "ru": "Онбординг, ревью, процесс: организовывал работу не только своей",
+        "en": "Onboarding, review, process: organising work beyond my own"
+      },
+      "summary": {
+        "ru": "В BeeSchool провёл онбординг троих стажёров: вводные материалы, код-ревью, настройка окружения и Git-флоу. Отдельно — управляю личной системой из 49 репозиториев с единым релизным процессом и явными гейтами, что на практике то же самое, что процесс разработки в маленькой команде, только роль владельца продукта, разработчика и релиз-менеджера играет один человек. Честная оговорка: формального опыта руководства командой в найме нет — есть организация процесса и людей там, где я реально это делал.",
+        "en": "At BeeSchool I onboarded three interns: introductory materials, code review, environment and Git-flow setup. Separately, I run a personal system of 49 repositories with a single release process and explicit gates — in practice the same discipline as running development for a small team, except one person plays product owner, engineer and release manager. Honest caveat: no formal people-management title on a payroll — what I have is process and people organisation where I actually did it."
+      },
+      "metrics": [
+        { "value": "3", "label": { "ru": "стажёра онбордингнуто", "en": "interns onboarded" } },
+        { "value": "49", "label": { "ru": "репозиториев под единым процессом", "en": "repositories under one process" } },
+        { "value": "100%", "label": { "ru": "релизов по единому регламенту", "en": "releases under one release discipline" } }
+      ],
+      "stack": [
+        "код-ревью", "онбординг", "Git-флоу", "релизный процесс",
+        "документирование решений", "постановка задач"
+      ],
+      "projects": ["toolchain"]
+    },
+
+    {
+      "id": "founder",
+      "code": "08",
+      "label": { "ru": "Основатель / CEO", "en": "Founder / CEO" },
+      "short": { "ru": "Основатель", "en": "Founder" },
+      "headline": {
+        "ru": "FINPILOT сделан по-основательски: идея, деньги на исследование не тратились, решения — сам",
+        "en": "FINPILOT was built founder-style: my idea, my research budget, my calls"
+      },
+      "summary": {
+        "ru": "Честно: юридического лица нет, наёмных сотрудников нет, внешнего финансирования нет. Есть другое — идея, доведённая в одиночку до продукта с пользователями исследования (385 человек), с патентной заявкой и публичной витриной. Все решения по продукту, архитектуре и релизам — мои, без вышестоящего согласования. Это ближе к соло-основателю на преинкубационной стадии, чем к операционному директору компании, и страница называет это прямо, а не маскирует масштаб.",
+        "en": "Honestly: no legal entity, no employees, no outside funding. What exists instead is an idea taken solo to a product with real survey participants (385 people), a patent filing and a public showcase. Every product, architecture and release decision is mine, with no one to sign off above me. This is closer to a pre-incorporation solo founder than to a company's chief executive, and the page says so plainly instead of dressing up the scale."
+      },
+      "metrics": [
+        { "value": "1", "label": { "ru": "человек в команде", "en": "person on the team" } },
+        { "value": "385", "label": { "ru": "участников исследования до старта разработки", "en": "survey participants before development started" } },
+        { "value": "1", "label": { "ru": "заявка в Роспатент", "en": "patent filing" } }
+      ],
+      "stack": [
+        "продуктовое видение", "единоличные решения", "исследование рынка",
+        "юридическая заявка (патент)", "публичная витрина"
+      ],
+      "projects": ["finpilot"]
+    },
+
+    {
+      "id": "designer",
+      "code": "09",
+      "label": { "ru": "UI/UX-дизайнер", "en": "UI/UX Designer" },
+      "short": { "ru": "Дизайн", "en": "Design" },
+      "headline": {
+        "ru": "Дизайн-система и вкус, а не диплом дизайнера",
+        "en": "A design system and a point of view, not a design degree"
+      },
+      "summary": {
+        "ru": "Не дизайнер по образованию — инженер, который сам довёл визуальный язык своих продуктов до состояния дизайн-системы: токены темы (тёмная по умолчанию, светлая через атрибут), сравнение трёх визуальных направлений для FINPILOT (спокойное / точное / уверенное) с явными критериями выбора, а не «на глаз». Эта страница — тоже пример: один экран, четыре… теперь десять ролей, печатная версия без вёрстки заново. Честная оговорка: без формальной дизайнерской практики в команде — есть системный подход к интерфейсу как инженер, который сам отвечает за то, как выглядит его продукт.",
+        "en": "Not a designer by training — an engineer who took his own products' visual language to a real design system: theme tokens (dark by default, light via an attribute), a three-direction comparison for FINPILOT (calm / precise / confident) decided on stated criteria, not by eye. This very page is an example too: one screen, four — now ten — roles, a print view with no separate layout. Honest caveat: no formal design practice inside a team — what I have is a systematic approach to interfaces from an engineer who owns how his own product looks."
+      },
+      "metrics": [
+        { "value": "3", "label": { "ru": "визуальных направления сравнено", "en": "visual directions compared" } },
+        { "value": "1", "label": { "ru": "дизайн-система токенов", "en": "design-token system" } },
+        { "value": "10", "label": { "ru": "ролей на одном экране без пересборки", "en": "roles on one screen, no rebuild" } }
+      ],
+      "stack": [
+        "дизайн-токены", "тёмная/светлая тема", "типографика", "сетка",
+        "критерии выбора направления", "печатные стили (CSS print)"
+      ],
+      "projects": ["finpilot"]
+    },
+
+    {
+      "id": "go",
+      "code": "10",
+      "label": { "ru": "Go-разработчик", "en": "Go Developer" },
+      "short": { "ru": "Go", "en": "Go" },
+      "headline": {
+        "ru": "Честно: направление роста, не рабочий стек",
+        "en": "Honestly: a growth direction, not a working stack yet"
+      },
+      "summary": {
+        "ru": "Прямая оговорка вместо накрутки: коммерческого и учебного опыта на Go нет — ни одного публичного проекта, ни курса. Роль на странице держится не на выдуманных достижениях, а на том, что реально переносится: три года промышленного backend на Python (слоистая архитектура, REST, тесты, релизная дисциплина) и три года C++ с пониманием, что происходит под высокоуровневыми абстракциями — тот самый набор, который обычно и делает переход на Go у backend-инженера быстрым. Эта страница не претендует, что Go уже есть; она говорит, откуда он взялся бы.",
+        "en": "A plain caveat instead of padding: no commercial or coursework experience with Go — not one public project, not one course. This role page does not rest on invented achievements but on what actually transfers: three years of production-style Python backend work (layered architecture, REST, tests, release discipline) and three years of C++ with a real grasp of what happens under high-level abstractions — exactly the combination that usually makes a Go ramp-up fast for a backend engineer. This page does not claim Go is already there; it says where it would come from."
+      },
+      "metrics": [
+        { "value": "0", "label": { "ru": "проектов на Go — честно", "en": "Go projects — honestly" } },
+        { "value": "3", "label": { "ru": "года промышленного Python-бэкенда как база переноса", "en": "years of production Python backend as transfer base" } },
+        { "value": "3", "label": { "ru": "года C++ — понимание уровня ниже рантайма", "en": "years of C++ — below-runtime understanding" } }
+      ],
+      "stack": [
+        "переносимо: REST API", "переносимо: слоистая архитектура",
+        "переносимо: тестирование", "переносимо: релизная дисциплина CI/CD",
+        "Go — планируется"
+      ],
+      "projects": ["finpilot"]
     }
   ],
 
@@ -150,15 +303,6 @@
         "en": "An algorithmic decision-support system for personal finance: it allocates free cash flow across debt, reserve and goals. Five modules — time-series forecasting (SES), generation of 66 alternatives, constraint filtering, SAW ranking on five criteria, and Monte Carlo robustness testing over 10 000 iterations. FastAPI, SQLAlchemy 2.0, Alembic, PostgreSQL, Docker, gated CI. Registration filed with Rospatent."
       }
     },
-    "bron": {
-      "name": "bron-kerbosch",
-      "href": "https://github.com/vevdokimovm/bron-kerbosch",
-      "tag": { "ru": "курсовая · алгоритмы", "en": "coursework · algorithms" },
-      "text": {
-        "ru": "Реализация алгоритма Брона — Кербоша: поиск всех максимальных клик в неориентированном графе, с разбором версии с выбором опорной вершины и оценкой сложности.",
-        "en": "An implementation of the Bron–Kerbosch algorithm: enumerating all maximal cliques in an undirected graph, including the pivoting variant and a complexity analysis."
-      }
-    },
     "vkgraph": {
       "name": "vk-graph",
       "href": "https://github.com/vevdokimovm/vk-graph",
@@ -168,40 +312,13 @@
         "en": "Building and analysing a social graph: API data collection, centrality metrics, community detection and visualisation."
       }
     },
-    "health": {
-      "name": "health-report-generator",
-      "href": "https://github.com/vevdokimovm/health-report-generator",
-      "tag": { "ru": "обработка данных", "en": "data processing" },
+    "algosite": {
+      "name": "algorithms-site",
+      "href": "https://github.com/vevdokimovm/algorithms-site",
+      "tag": { "ru": "интерактивный сайт", "en": "interactive site" },
       "text": {
-        "ru": "Сборка разрозненных лабораторных выгрузок в единый отчёт: нормализация единиц, сопоставление референсов, динамика показателей во времени.",
-        "en": "Merging scattered lab exports into a single report: unit normalisation, reference-range matching and tracking values over time."
-      }
-    },
-    "tgbot": {
-      "name": "TG-bot-for-finances",
-      "href": "https://github.com/vevdokimovm/TG-bot-for-finances",
-      "tag": { "ru": "асинхронный сервис", "en": "async service" },
-      "text": {
-        "ru": "Телеграм-бот учёта финансов на aiogram: около пятнадцати хендлеров, три модели БД, асинхронная работа с базой, слоистая архитектура.",
-        "en": "A finance-tracking Telegram bot on aiogram: about fifteen handlers, three database models, async database access and a layered architecture."
-      }
-    },
-    "todo": {
-      "name": "Web-To-Do-List",
-      "href": "https://github.com/vevdokimovm/Web-To-Do-List",
-      "tag": { "ru": "веб-приложение", "en": "web application" },
-      "text": {
-        "ru": "Многопользовательский список задач на Flask и SQLAlchemy: регистрация, авторизация, около десяти REST-эндпоинтов, персональные CRUD-задачи.",
-        "en": "A multi-user task list on Flask and SQLAlchemy: registration, authentication, about ten REST endpoints and per-user CRUD."
-      }
-    },
-    "parser": {
-      "name": "Parser-hhru-vacancies",
-      "href": "https://github.com/vevdokimovm/Parser-hhru-vacancies",
-      "tag": { "ru": "сбор данных", "en": "data collection" },
-      "text": {
-        "ru": "Парсер вакансий: около пятисот записей за прогон, фильтрация по ключевым словам, структурированный экспорт в Excel через openpyxl.",
-        "en": "A vacancy parser: about five hundred records per run, keyword filtering and structured export to Excel via openpyxl."
+        "ru": "Обучающий сайт по алгоритмам: теория → интерактивная визуализация шагов → типичные ошибки → задача с автопроверкой. Один HTML-файл, без сборки и сервера, светлая/тёмная тема.",
+        "en": "An algorithms-teaching site: theory → an interactive step visualiser → common mistakes → a task with a checker. A single HTML file, no build, no server, light/dark theme."
       }
     },
     "toolchain": {
