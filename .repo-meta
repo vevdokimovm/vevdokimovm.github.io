@@ -1,3 +1,3 @@
 description=Визитка-сайт с переключателем ролей (backend / аналитик / DevOps / C++), два языка, печать даёт готовое резюме под роль. Содержание — в одном JSON, код не трогается.
 topics=resume,github-pages,portfolio,single-page,javascript,public,showcase
-private=true
+private=false
